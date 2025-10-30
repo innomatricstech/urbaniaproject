@@ -1,0 +1,598 @@
+.navbar {
+  background: linear-gradient(to right, #1a237e, #283593);
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3px;
+}
+
+.navbar-logo {
+  position: relative;
+  top: -10%;
+  display: inline-block;
+}
+
+.company-name {
+  position: absolute;
+  bottom: 65px;
+  left: 90%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  width: auto;
+  line-height: 1;
+  padding: -5px 0;
+  top: 67%;
+}
+
+.navbar-logo img {
+  height: 155px;
+  width: auto;
+  margin-bottom: -15px;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-section {
+  padding: 4px 0;
+}
+
+.dropdown-section h4 {
+  color: #1a237e;
+  margin: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Add this to your existing Navbar.css */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-link i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+/* Remove the general dropdown arrow */
+.nav-link:after {
+  content: none;
+}
+
+/* Add dropdown arrow only for dropdown items */
+.dropdown .nav-link:after {
+  content: '▼';
+  font-size: 12px;
+  margin-left: 4px;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+/* Updated contact info styles */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone-number,
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: white;
+}
+
+.phone-number {
+  background-color: #4169E1;
+  color: white;
+  border: none;
+}
+
+.phone-number:hover {
+  background-color: #3658c7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(65, 105, 225, 0.3);
+}
+
+.whatsapp-link {
+  background-color: #25D366;
+  color: white;
+  border: none;
+}
+
+.whatsapp-link:hover {
+  background-color: #22c55e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.phone-number i,
+.whatsapp-link i {
+  font-size: 20px;
+}
+
+.menu-icon {
+  display: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.social-icon i {
+  font-size: 18px;
+}
+
+/* Facebook */
+.social-icon .fa-facebook-f {
+  color: #1877f2;
+}
+
+/* Instagram */
+.social-icon .fa-instagram {
+  color: #e4405f;
+}
+
+/* Twitter */
+.social-icon .fa-twitter {
+  color: #1da1f2;
+}
+
+/* YouTube */
+.social-icon .fa-youtube {
+  color: #ff0000;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    background-color: #1a237e;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+  }
+
+  .navbar-logo img {
+    height: 120px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 99;
+  }
+
+  .menu-icon i {
+    color: #ffffff;
+  }
+
+  .fa-bars {
+    color: #ffffff;
+  }
+
+  .fa-times {
+    color: #ffffff;
+  }
+
+  .nav-menu {
+    background-color: #1a237e;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px); /* Subtract navbar height */
+    position: fixed;
+    top: 70px; /* Exactly navbar height */
+    left: -100%;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    background-color: #1a237e;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 998;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 0.8rem;
+    border: none;
+  }
+
+  .nav-links {
+    margin: 0;
+    padding: 0.5rem;
+    color: white;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-item .book-now-btn {
+    background-color: white !important;
+    color: #1a237e !important;
+    margin: 10px auto !important;
+    padding: 10px 25px !important;
+  }
+
+  .nav-item .book-now-btn:hover {
+    background-color: #f8f9fa !important;
+    transform: translateY(-2px);
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .dropdown-content {
+    position: relative;
+    top: 0;
+    background-color: #1a237e;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .dropdown-section {
+    padding: 5px 15px;
+  }
+
+  .dropdown-item {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 8px 25px;
+    text-align: center;
+  }
+
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown-section h4 {
+    color: #ffd700;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .book-now-btn {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .company-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    width: auto;
+    text-align: center;
+    top: auto;
+  }
+
+  .navbar-logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Floating buttons styling */
+  .floating-contact-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .floating-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .phone-button {
+    background-color: #1a237e;
+  }
+
+  .whatsapp-button {
+    background-color: #25D366;
+  }
+
+  /* Additional fix for dropdown arrows */
+  .nav-links .fa-caret-down {
+    color: white;
+  }
+
+  /* Ensure content below navbar is properly positioned */
+  .main-content {
+    margin-top: 70px;
+  }
+
+  /* Fix any potential body/html gaps */
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-logo img {
+    height: 100px;
+  }
+
+  .floating-contact-buttons {
+    right: 20px;
+  }
+
+  .floating-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .floating-button i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-name {
+    font-size: 0.85rem;
+    bottom: 12px;
+    left: 112px;
+  }
+
+  .floating-contact-buttons {
+    right: 15px;
+  }
+
+  .floating-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .floating-button i {
+    font-size: 18px;
+  }
+
+  .nav-menu.active {
+    padding-top: 5px;
+  }
+
+  .nav-item {
+    padding: 0.6rem;
+  }
+}
+
+/* Floating Contact Buttons */
+.floating-contact-buttons {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 9999;
+}
+
+.floating-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.floating-button i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.phone-button {
+  background-color: #1a237e;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+}
+
+.floating-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-now-btn {
+  background-color: #4169E1 !important;
+  color: #ffffff !important;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.book-now-btn:hover {
+  background-color: #333 !important;
+  transform: translateY(-2px);
+}
+
+.nav-menu .nav-item .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.nav-menu .nav-item .dropdown-content.show {
+  display: block;
+}
+
+.nav-menu .nav-item .dropdown-content .dropdown-item {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.nav-menu .nav-item .dropdown-content .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #1a237e;
+} 

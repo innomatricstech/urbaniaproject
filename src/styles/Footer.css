@@ -1,0 +1,371 @@
+.footer {
+  background-color: #1a1f2e;
+  color: #ffffff;
+  padding: 60px 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  margin-bottom: 0;
+  margin-top: -50px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: translateY(-3px);
+}
+
+.footer-logo img {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: -15px;
+}
+
+.company-description {
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  margin-top: -20px;
+  padding-left: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-links a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #1a73e8, #64b5f6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a:hover:before {
+  opacity: 1;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #4e9eff;
+}
+
+.footer-section:hover h3::after {
+  width: 60px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.footer-section ul li a:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.contact-info {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info .address,
+.contact-info .phone-numbers,
+.contact-info .email-addresses {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact-info .address p,
+.contact-info .phone-numbers p,
+.contact-info .email-addresses p {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #ffffff;
+  opacity: 0.9;
+  padding-left: 0;
+}
+
+.contact-info i {
+  color: #4e9eff;
+  margin-right: 12px;
+  margin-top: 3px;
+  min-width: 16px;
+  font-size: 1rem;
+}
+
+.contact-info .phone-numbers {
+  margin-top: -16px;
+}
+
+.contact-info .email-addresses {
+  margin-top: -29px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-namebird {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  position: relative;
+  left: -9%;
+  top: -35px;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .company-namebird {
+    font-size: 0.85rem;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 0;
+    top: -10px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-namebird {
+    font-size: 0.87rem;
+    margin-top: -30px;
+    margin-bottom: 39px;
+    position: relative;
+    left: 0;
+    top: -15px;
+    text-align: left;
+  }
+}
+
+.footer-bottom-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0b7c3;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links span {
+  color: #1a73e8;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .footer-section {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .footer-section h3::after {
+    left: 0;
+    transform: none;
+    width: 30px;
+  }
+
+  .company-description {
+    text-align: left;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .footer-section ul {
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 12px;
+  }
+
+  .footer-section ul li a {
+    justify-content: flex-start;
+    font-size: 0.95rem;
+  }
+
+  .footer-logo {
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+
+  .contact-info {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .contact-info .address p,
+  .contact-info .phone-numbers p,
+  .contact-info .email-addresses p {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .company-namebird {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 30px 0 20px;
+  }
+
+  .footer-container {
+    gap: 25px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .company-description {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo img {
+    height: 80px;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 35px;
+    height: 35px;
+  }
+} 
