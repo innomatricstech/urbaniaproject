@@ -34,7 +34,7 @@ const BusTwentyFivePlusOne = () => {
     <div className="urbania-detail">
       <div className="urbania-detail-container">
         <header className="detail-header">
-          <h1>  Volvo 25 Seater AC Mini Coach  Bus</h1>
+          <h1>  Volvo 25 Seater AC Mini Coach  Bus in bangalore</h1>
           <p>
             Experience premium comfort with our brand new 2025 model Force
             25+1 seater luxury bus. Perfect for large groups, corporate events,
