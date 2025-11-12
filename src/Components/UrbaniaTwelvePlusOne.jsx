@@ -49,11 +49,6 @@ const UrbaniaTwelvePlusOne = () => {
   <p className="packages-intro">
     We offer flexible and affordable Urbania van hire packages in Bangalore tailored for short trips, corporate events, weddings, and long-distance outstation journeys. Choose from hourly or daily packages with transparent pricing and professional chauffeurs for comfortable group travel.
   </p>
-             
-  <div className="package-summaries">
-    <h3>8 hrs / 80 Kms — ₹7,000</h3>
-    
-    <h3>12 hrs / 100 Kms — ₹10,000</h3>
     
   </div>
 
