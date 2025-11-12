@@ -591,7 +591,7 @@ const Home = () => {
       <section className="contact-map-section">
         <h2 className="section-title">Contact Us</h2>
         <p className="section-subtitle">
-          Book your Force Urbania rental or inquire about our services
+         Ready to book your Urbania van rental in Bangalore? Contact us for luxury, corporate, and wedding van hire services with 24/7 customer support.
         </p>
 
         <div className="contact-map-container">
