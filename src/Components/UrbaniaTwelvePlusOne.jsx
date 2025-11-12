@@ -43,53 +43,67 @@ const UrbaniaTwelvePlusOne = () => {
 
         <div className="detail-content">
           <div className="rental-info">
-            <div className="rental-packages">
-              <h2>Rental Packages:</h2>
-              <table className="packages-table">
-                <tbody>
-                  <tr>
-                    <td>8hrs 80Kms</td>
-                    <td>₹7,000</td>
-                  </tr>
-                  <tr>
-                    <td>12hrs 100Kms</td>
-                    <td>₹10,000</td>
-                  </tr>
-                  <tr>
-                    <td>Out Station / Kms</td>
-                    <td>₹40</td>
-                  </tr>
-                  <tr>
-                    <td>Driver Bata</td>
-                    <td>₹700</td>
-                  </tr>
-                  <tr>
-                    <td>After Hrs Driver Bata</td>
-                    <td>₹700</td>
-                  </tr>
-                  <tr>
-                    <td>Extra Per Kms</td>
-                    <td>₹40</td>
-                  </tr>
-                  <tr>
-                    <td>Extra Per Hours</td>
-                    <td>₹400</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p className="package-note">
-                * Driver bata, toll, and parking charges are extra. GST
-                additional as applicable.
-              </p>
-              <div className="action-buttons">
-                <Link to="/contact" className="book-now-btn">
-                  Book Now
-                </Link>
-                <a href="tel:+918951666166" className="call-btn">
-                  Call: 8951666166
-                </a>
-              </div>
-            </div>
+           <div className="rental-packages" id="rental-packages">
+  <h2>Rental Packages:</h2>
+
+  {/* Short SEO intro paragraph (use primary + LSI naturally) */}
+  <p className="packages-intro">
+    We offer flexible and affordable <strong>Urbania van hire packages in Bangalore</strong> tailored for short trips, corporate events, weddings, and long-distance outstation journeys. Choose from hourly or daily packages with transparent pricing and professional chauffeurs for comfortable group travel.
+  </p>
+
+  {/* Optional: individual package summaries (H3 + short LSI description) */}
+  <div className="package-summaries">
+    <h3>8 hrs / 80 Kms — ₹7,000</h3>
+    <p>Perfect for short local trips — compact, comfortable, and ideal for small group transfers or corporate pickups. (LSI: affordable van rental prices, short trip van hire)</p>
+
+    <h3>12 hrs / 100 Kms — ₹10,000</h3>
+    <p>Best for day-long outings and business events — extra kilometers and driver allowance available for outstation travel. (LSI: flexible packages, day hire van Bangalore)</p>
+
+    {/* If you have dynamic packages or more rows, add them here in the same H3 + p pattern */}
+  </div>
+
+  {/* Keep your existing table (or move it below). The table is good for clarity and conversion. */}
+  <table className="packages-table" aria-describedby="rental-packages">
+    <tbody>
+      <tr>
+        <td>8hrs 80Kms</td>
+        <td>₹7,000</td>
+      </tr>
+      <tr>
+        <td>12hrs 100Kms</td>
+        <td>₹10,000</td>
+      </tr>
+      <tr>
+        <td>Out Station / Kms</td>
+        <td>₹40</td>
+      </tr>
+      <tr>
+        <td>Driver Bata</td>
+        <td>₹700</td>
+      </tr>
+      <tr>
+        <td>After Hrs Driver Bata</td>
+        <td>₹700</td>
+      </tr>
+      <tr>
+        <td>Extra Per Kms</td>
+        <td>₹40</td>
+      </tr>
+      <tr>
+        <td>Extra Per Hours</td>
+        <td>₹400</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p className="packages-note"><em>* Driver bata, toll, and parking charges are extra. GST additional as applicable.</em></p>
+
+  {/* Call to action */}
+  <div className="packages-cta">
+    <button className="btn-primary">Book Now</button>
+    <a href="tel:8951666166" className="btn-outline">Call: 8951666166</a>
+  </div>
+</div>
 
             <div className="vehicle-image-slider">
               <button className="slider-btn prev" onClick={prevImage}>
