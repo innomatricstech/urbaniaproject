@@ -309,7 +309,7 @@ const Home = () => {
               Premium Force Urbania Van Rental in Bangalore – Comfort, Safety & Style for Every Journey
             </h2>
             <p className="slide-in">
-              Experience hassle-free travel with Urbania Rentals. Our luxury Force Urbania vans are ideal for weddings, corporate events, outstation trips, and group tours in and around Bangalore. Enjoy comfortable seating, air conditioning, and professional chauffeurs.
+              Experience hassle-free travel with Urbania Rentals. Our luxury Force Urbania vans are ideal for weddings, corporate events, outstation trips, and group tours in outstation and around Bangalore. Enjoy comfortable seating, air conditioning, and professional chauffeurs.
             </p>
           </div>
           <div className="hero-image reveal">
