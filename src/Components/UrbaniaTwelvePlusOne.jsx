@@ -49,8 +49,7 @@ const UrbaniaTwelvePlusOne = () => {
   <p className="packages-intro">
    We provide flexible and affordable Urbania van rentals in Bangalore for short trips, corporate events, weddings, and long-distance journeys. You can choose from hourly or daily packages, offering clear pricing and professional drivers for comfortable group travel.
   </p>
-             
-  </div>
+   </div>
 
   <table className="packages-table" aria-describedby="rental-packages">
     <tbody>
