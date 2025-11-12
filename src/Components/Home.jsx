@@ -368,7 +368,8 @@ const Home = () => {
               clients based on trust and satisfaction.
             </p>
             <p>
-              At Urbania Rentals Bangalore, we specialize in premium Force Urbania van rental for corporate, family, and outstation travel. Our luxury van hire services ensure comfort, punctuality, and reliability on every journey.
+             At Urbania Rentals Bangalore, we specialize in premium Force Urbania van rental for corporate, family, and outstation travel. 
+             Our luxury van hire services ensure comfort, punctuality, and reliability on every journey.
             </p>
           </div>
         </div>
