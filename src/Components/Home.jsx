@@ -426,7 +426,7 @@ const Home = () => {
       <section className="features">
         <h1 className="reveal">Premium Features</h1>
         <p className="reveal">
-          Experience next-level quality with our premium offerings
+          Enjoy priority access, premium materials, and enhanced security with every Urbania van rental. Our dedicated chauffeur service and flexible booking options make us Bangalore’s trusted choice for premium travel.
         </p>
 
         <div className="features-grid">
