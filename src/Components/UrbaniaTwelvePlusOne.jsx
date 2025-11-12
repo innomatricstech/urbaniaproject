@@ -46,23 +46,19 @@ const UrbaniaTwelvePlusOne = () => {
            <div className="rental-packages" id="rental-packages">
   <h2>Rental Packages:</h2>
 
-  {/* Short SEO intro paragraph (use primary + LSI naturally) */}
   <p className="packages-intro">
     We offer flexible and affordable <strong>Urbania van hire packages in Bangalore</strong> tailored for short trips, corporate events, weddings, and long-distance outstation journeys. Choose from hourly or daily packages with transparent pricing and professional chauffeurs for comfortable group travel.
   </p>
-
-  {/* Optional: individual package summaries (H3 + short LSI description) */}
+             
   <div className="package-summaries">
     <h3>8 hrs / 80 Kms — ₹7,000</h3>
-    <p>Perfect for short local trips — compact, comfortable, and ideal for small group transfers or corporate pickups. (LSI: affordable van rental prices, short trip van hire)</p>
+    <p>Perfect for short local trips — compact, comfortable, and ideal for small group transfers or corporate pickups. </p>
 
     <h3>12 hrs / 100 Kms — ₹10,000</h3>
-    <p>Best for day-long outings and business events — extra kilometers and driver allowance available for outstation travel. (LSI: flexible packages, day hire van Bangalore)</p>
+    <p>Best for day-long outings and business events — extra kilometers and driver allowance available for outstation travel. </p>
 
-    {/* If you have dynamic packages or more rows, add them here in the same H3 + p pattern */}
   </div>
 
-  {/* Keep your existing table (or move it below). The table is good for clarity and conversion. */}
   <table className="packages-table" aria-describedby="rental-packages">
     <tbody>
       <tr>
