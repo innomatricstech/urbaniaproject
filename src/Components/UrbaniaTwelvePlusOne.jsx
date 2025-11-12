@@ -36,9 +36,8 @@ const UrbaniaTwelvePlusOne = () => {
         <header className="detail-header">
           <h1>Force Urbania 12+1 Seater Luxury Van Rental</h1>
           <p>
-            Experience premium comfort with our brand new 2025 model Force
-            Urbania 12+1 seater luxury van. Perfect for medium-sized groups,
-            corporate events, and outstation travel.
+           Experience unmatched luxury and space with our Force Urbania 12+1 seater van rental in Bangalore. 
+           Perfect for corporate travel, family vacations, and outstation journeys, this van blends comfort, safety, and style to deliver an unforgettable travel experience.
           </p>
         </header>
 
