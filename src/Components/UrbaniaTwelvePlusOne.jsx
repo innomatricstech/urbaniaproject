@@ -52,11 +52,9 @@ const UrbaniaTwelvePlusOne = () => {
              
   <div className="package-summaries">
     <h3>8 hrs / 80 Kms — ₹7,000</h3>
-    <p>Perfect for short local trips — compact, comfortable, and ideal for small group transfers or corporate pickups. </p>
-
+    
     <h3>12 hrs / 100 Kms — ₹10,000</h3>
-    <p>Best for day-long outings and business events — extra kilometers and driver allowance available for outstation travel. </p>
-
+    
   </div>
 
   <table className="packages-table" aria-describedby="rental-packages">
