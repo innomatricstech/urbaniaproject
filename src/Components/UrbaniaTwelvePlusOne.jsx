@@ -47,7 +47,7 @@ const UrbaniaTwelvePlusOne = () => {
   <h2>Rental Packages:</h2>
 
   <p className="packages-intro">
-    We offer flexible and affordable <strong>Urbania van hire packages in Bangalore</strong> tailored for short trips, corporate events, weddings, and long-distance outstation journeys. Choose from hourly or daily packages with transparent pricing and professional chauffeurs for comfortable group travel.
+    We offer flexible and affordable Urbania van hire packages in Bangalore tailored for short trips, corporate events, weddings, and long-distance outstation journeys. Choose from hourly or daily packages with transparent pricing and professional chauffeurs for comfortable group travel.
   </p>
              
   <div className="package-summaries">
