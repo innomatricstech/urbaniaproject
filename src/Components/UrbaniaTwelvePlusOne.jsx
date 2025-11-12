@@ -188,7 +188,8 @@ const UrbaniaTwelvePlusOne = () => {
           <section className="transparent-pricing-section">
             <h2 className="pricing-title">Transparent Pricing</h2>
             <p className="pricing-subtitle">
-              We believe in clear, upfront pricing with no hidden charges
+             We believe in clear, upfront pricing for every Force Urbania van rental. 
+             No hidden costs—just reliable service and transparent rates for a worry-free experience.
             </p>
 
             <div className="pricing-box">
